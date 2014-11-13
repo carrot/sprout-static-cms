@@ -1,0 +1,16 @@
+{
+  "name": "<%= S(name).slugify().s %>",
+  "description": "<%= description %>",
+  "dependencies": {
+    "jade": "1.x",
+    "marked": "0.3.x",
+    "stylus": "0.48.x",
+    "coffee-script": "1.8.x",
+    "autoprefixer-stylus": "0.3.x",
+    "axis": "0.3.x",
+    "rupture": "0.4.x",
+    "roots": "3.0.0-rc.10",
+    "roots-contentful": "0.0.3",
+    "ship": "0.2.x"
+  }
+}
