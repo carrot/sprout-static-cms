@@ -1,5 +1,7 @@
-exports.before = (sprout, done) ->
-  done()
+contentful = require 'contentful-management'
+
+set_up_contentful = (sprout) ->
+  console.log(contentful)
 
 exports.configure = [
   {
@@ -29,7 +31,7 @@ exports.configure = [
   }
 ]
 
-exports.after = (sprout, done) ->
-  sprout.config_values.space_id = 'xxx'
-  console.log(sprout.config_values)
+exports.before_render = (sprout, done) ->
+  console.log('debugging')
+  console.log(sprout)
   done()
