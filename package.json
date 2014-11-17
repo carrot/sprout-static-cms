@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/carrot/sprout-static-cms",
   "dependencies": {
-    "contentful-management": "^0.1.0"
+    "contentful-management": "0.1.x",
+    "when": "3.6.x"
   }
 }

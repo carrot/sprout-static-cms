@@ -13,5 +13,13 @@ module.exports =
     contentful
       access_token: '<%= contentful_token %>'
       space_id: '<%= space_id %>'
-      content_types: []
+      <% if (set_up_contentful) { %>
+        content_types: [
+          {
+            id: '<%= content_type_id %>'
+            name: 'blog_posts'
+            filters: {}
+          }
+        ]
+      <% } %>
   ]
