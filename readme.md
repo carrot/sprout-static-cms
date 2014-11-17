@@ -1,6 +1,6 @@
 # sprout-static-cms
 
-A sprout template for creating a static CMS in Roots using Contentful and Bitballoon.
+A sprout template for creating a static CMS in Roots using Contentful and Bitballoon. Read our [blog post](http://carrot.is/coding/static_cms) for more context.
 
 ### Installation
 
