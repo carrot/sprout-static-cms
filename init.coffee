@@ -1,8 +1,3 @@
-contentful = require 'contentful-management'
-
-set_up_contentful = (sprout) ->
-  console.log(contentful)
-
 exports.configure = [
   {
     type: 'input',
@@ -17,7 +12,7 @@ exports.configure = [
   {
     type: 'input',
     name: 'contentful_token',
-    message: 'What is your Contentful access token?'
+    message: 'What is your Contentful Delivery API token?'
   },
   {
     type: 'input',
@@ -31,6 +26,5 @@ exports.configure = [
   }
 ]
 
-exports.before_render = (sprout, done) ->
-  set_up_contentful()
-  done()
+exports.after = ->
+  console.log 'Awesome! Your static CMS roots project has been set up and configured. \nTry it out by creating a content type on Contentful, configuring the content type in `app.coffee`, \nand then accessing it in your templates using the `contentful` local variable. To learn more, check out the roots-contentful readme: https://github.com/carrot/roots-contentful'
