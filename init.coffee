@@ -26,12 +26,11 @@ exports.configure = [
   },
   {
     type: 'input',
-    name: 'bitballoon_token',
-    message: 'What is your BitBalloon access token?'
+    name: 'netlify_token',
+    message: 'What is your Netlify access token?'
   }
 ]
 
 exports.before_render = (sprout, done) ->
-  console.log('debugging')
-  console.log(sprout)
+  set_up_contentful()
   done()

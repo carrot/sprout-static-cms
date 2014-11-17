@@ -16,6 +16,6 @@ Setup
 Deployment
 ----------
 
-This site is hosted at Bitballoon.
+This site is hosted at Netlify.
 
 Run `make deploy` to deploy the site. This command is a shortcut for compiling the site with roots and deploying using [ship](https://github.com/carrot/ship). See the [Makefile](Makefile) for more info.

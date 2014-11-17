@@ -9,7 +9,7 @@ A sprout template for creating a static CMS in Roots using Contentful and Bitbal
 
 ### Setup
 
-You should sign up for a Contentful and BitBalloon account before using this template as you will need an access token for both to complete the template configuration.
+You should sign up for a Contentful and Netlify account before using this template as you will need an access token for both to complete the template configuration.
 
 How to get a token:
 
@@ -24,12 +24,11 @@ Contentful:
 - Click on the gear on the top menu to go to Space Settings
 - Note your Space ID
 
-BitBalloon:
+Netlify:
 
-- Log in
-- Click on your account username in the top right
-- Select 'Applications'
-- Click a 'Create a Personal Token' and note the result
+- `npm install netlify -g` - Install the [netlify CLI client](https://github.com/netlify/netlify-cli)
+- `netlify open` - Trigger the netlify auth flow. Auth with your account.
+- `cat ~/.netlify/config` - Print out the netlify config token.
 
 ### Options
 
@@ -37,4 +36,4 @@ BitBalloon:
 - **description** (a short description of the template)
 - **contentful_token** (your Contentful account's OAuth access token)
 - **space_id** (the ID for the Contentful space associated with this project)
-- **bitballoon_token** (your BitBalloon account's personal access token)
+- **netlify_token** (your Netlify account's personal access token)
