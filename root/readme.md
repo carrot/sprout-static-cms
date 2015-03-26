@@ -1,4 +1,4 @@
-# <%= S(name).humanize().s %>
+<%= S.humanize(name) %>
 
 <%= description %>
 

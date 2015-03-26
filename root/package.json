@@ -1,5 +1,5 @@
 {
-  "name": "<%= S(name).slugify().s %>",
+  "name": "<%= S.slugify(name) %>",
   "description": "<%= description %>",
   "dependencies": {
     "jade": "1.x",
