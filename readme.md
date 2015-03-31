@@ -31,10 +31,9 @@ You will need the following set up before you run this:
 #### A Netlify account and API token
 
 1. Create an account on their [website](https://www.netlify.com/)
-2. `npm install netlify -g` - Install the [netlify CLI client](https://github.com/netlify/netlify-cli)
-3. `netlify open` - Trigger the netlify auth flow. Auth with your account.
-4. `cat ~/.netlify/config` - Print out the netlify API token.
-5. Note your Netlify API token, you'll need this for the template.
+2. Log in and click on your account dropdown at the top right and select `OAuth apps`
+3. Under Personal Access Tokens, create a new token.
+4. Note your Netlify API token, you'll need this for the template.
 
 ### Options
 
