@@ -1,0 +1,40 @@
+{
+  "name": "sprout-static-cms",
+  "version": "0.0.1",
+  "description": "A sprout template for building a static CMS with Roots, Contentful, and Netlify.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1",
+    "rimraf": "^2.3.2",
+    "sprout": "^0.2.1",
+    "when": "^3.7.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrot/sprout-static-cms.git"
+  },
+  "keywords": [
+    "sprout",
+    "roots",
+    "template",
+    "templates",
+    "cms",
+    "static",
+    "netlify",
+    "contentful"
+  ],
+  "author": "Josh Rowley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carrot/sprout-static-cms/issues"
+  },
+  "homepage": "https://github.com/carrot/sprout-static-cms"
+}
