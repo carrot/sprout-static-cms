@@ -13,7 +13,7 @@ locals      = require(locals_path)
 
 opts =
   config: locals_path
-  branch: 'tests'
+  branch: 'content-types'
   verbose: true
 
 before (done) ->
