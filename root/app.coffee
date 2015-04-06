@@ -11,7 +11,8 @@ module.exports =
 
   extensions: [
     contentful
-      access_token: '<%= contentful_token %>'
+      access_token: '<%= delivery_token %>'
+      management_token: '<%= management_token %>'
       space_id: '<%= space_id %>'
       content_types: [
         # {

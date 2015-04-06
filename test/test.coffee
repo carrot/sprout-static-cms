@@ -30,7 +30,8 @@ describe 'sprout-static-cms', ->
   it 'should load the correct values into app.coffee', (done) ->
     nodefn.call(fs.readFile, path.join(test_path, 'app.coffee'), 'utf8')
       .then (res) ->
-        expect(res).to.have.string "access_token: '#{locals.contentful_token}'"
+        expect(res).to.have.string "access_token: '#{locals.delivery_token}'"
+        expect(res).to.have.string "management_token: '#{locals.management_token}'"
         expect(res).to.have.string "space_id: '#{locals.space_id}'"
       .then(-> done()).catch(done)
 
