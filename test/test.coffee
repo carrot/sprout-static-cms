@@ -13,7 +13,6 @@ locals      = require(locals_path)
 
 opts =
   config: locals_path
-  branch: 'tests'
   verbose: true
 
 before (done) ->
@@ -27,8 +26,8 @@ after ->
 
 describe 'sprout-static-cms', ->
 
-  it 'should load the correct values into app.coffee', (done) ->
-    nodefn.call(fs.readFile, path.join(test_path, 'app.coffee'), 'utf8')
+  it 'should load the correct values into contentful.coffee', (done) ->
+    nodefn.call(fs.readFile, path.join(test_path, 'contentful.coffee'), 'utf8')
       .then (res) ->
         expect(res).to.have.string "access_token: '#{locals.delivery_token}'"
         expect(res).to.have.string "management_token: '#{locals.management_token}'"
