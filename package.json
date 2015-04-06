@@ -7,7 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "contentful-management": "0.1.x"
+    "contentful-management": "0.1.x",
+    "lodash": "3.6.x",
+    "underscore.string": "3.0.x"
   },
   "devDependencies": {
     "chai": "2.2.x",

@@ -35,6 +35,18 @@ You will need the following set up before you run this:
 3. Under Personal Access Tokens, create a new token.
 4. Note your Netlify API token, you'll need this for the template.
 
+### Generators
+
+#### Model Generator
+
+Sprout-static-cms comes equipped with a Contentful Content Model generator. Pass in the Content Model's name followed by a list of fields to generate following a `name:type` format, for example:
+
+```bash
+sprout run static-cms model Post title:text description:text slug:symbol date:date rank:integer price:number private:boolean
+``` 
+
+If you don't specify a field type, sprout will default to a text field.
+
 ### Options
 
 - **name** (name of template)
