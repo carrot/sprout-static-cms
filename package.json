@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "contentful-management": "0.1.x"
+  },
   "devDependencies": {
     "chai": "2.2.x",
     "coffee-script": "1.9.x",
