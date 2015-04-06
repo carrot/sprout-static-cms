@@ -1,6 +1,6 @@
 # sprout-static-cms
 
-A sprout template for creating a static CMS in Roots using Contentful and Netlify. Please go through the setup steps before running the template.
+A [sprout](http://github.com/carrot/sprout) template for creating a static CMS in Roots using Contentful and Netlify. Please go through the setup steps before running the template.
 
 ### Installation
 
