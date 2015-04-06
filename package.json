@@ -8,11 +8,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^2.2.0",
-    "mocha": "^2.2.1",
-    "rimraf": "^2.3.2",
-    "sprout": "^0.2.1",
-    "when": "^3.7.2"
+    "chai": "2.2.x",
+    "coffee-script": "1.9.x",
+    "mocha": "2.2.x",
+    "rimraf": "2.3.x",
+    "sprout": "0.2.x",
+    "when": "3.7.x"
   },
   "scripts": {
     "test": "mocha"

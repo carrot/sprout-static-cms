@@ -11,8 +11,13 @@ exports.configure = [
   },
   {
     type: 'input',
-    name: 'contentful_token',
+    name: 'delivery_token',
     message: 'What is your Contentful Delivery API token?'
+  },
+  {
+    type: 'input',
+    name: 'management_token',
+    message: 'What is your Contentful Managment API token?'
   },
   {
     type: 'input',

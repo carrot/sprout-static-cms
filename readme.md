@@ -39,6 +39,6 @@ You will need the following set up before you run this:
 
 - **name** (name of template)
 - **description** (a short description of the template)
-- **contentful_token** (your Contentful account's Delivery API access token)
+- **delivery_token** (your Contentful account's Delivery API access token)
 - **space_id** (the ID for the Contentful space associated with this project)
 - **netlify_token** (your Netlify account's personal access token)
