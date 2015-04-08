@@ -1,8 +1,11 @@
-require('dotenv').load()
-
 var chai   = require('chai'),
     path   = require('path'),
+    fs     = require('fs'),
     Sprout = require('sprout');
+
+if (fs.existsSync(path.join(process.cwd(), '.env'))) {
+  require('dotenv').load()
+}
 
 var sprout = new Sprout(path.join(__dirname, '../config'));
 
