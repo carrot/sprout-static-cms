@@ -14,6 +14,7 @@
   "devDependencies": {
     "chai": "2.2.x",
     "coffee-script": "1.9.x",
+    "dotenv": "1.1.x",
     "mocha": "2.2.x",
     "rimraf": "2.3.x",
     "sprout": "0.2.x",

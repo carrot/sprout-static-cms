@@ -8,11 +8,8 @@ test_path          = path.join(__dirname, 'tmp')
 
 tpl = 'sprout-static-cms'
 
-locals_path = path.join(_path, 'locals.json')
-locals      = require(locals_path)
-
 opts =
-  config: locals_path
+  locals: locals
   verbose: true
 
 before (done) ->

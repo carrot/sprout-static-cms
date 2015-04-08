@@ -49,10 +49,24 @@ sprout run static-cms model Post title:text description:text slug:symbol date:da
 
 If you don't specify a field type, sprout will default to a text field.
 
+
+#### Tests
+
+In order to run the tests, you'll need to add a couple environment variables. This project is setup to use [dotenv](https://github.com/motdotla/dotenv), so all you should need to do is add a `.env` file with the following variables:
+
+```
+DELIVERY_TOKEN=XXXXXXXXXXXX
+MANAGEMENT_TOKEN=XXXXXXXXXXXX
+SPACE_ID=XXXXXXXXXXXX
+```
+
+You should use a test Contentful account (i.e. not in use in production) to populate these values.
+
 ### Options
 
 - **name** (name of template)
 - **description** (a short description of the template)
-- **delivery_token** (your Contentful account's Delivery API access token)
 - **space_id** (the ID for the Contentful space associated with this project)
+- **delivery_token** (your Contentful space's Delivery API token)
+- **management_token** (your Contentful account's Management API token)
 - **netlify_token** (your Netlify account's personal access token)
