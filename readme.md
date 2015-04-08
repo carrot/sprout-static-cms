@@ -37,6 +37,8 @@ You will need the following set up before you run this:
 
 ### Generators
 
+Once your static CMS project is set up, this template will also give you useful generators. These generators rely on `contentful.coffee` in order to provide the credentials needed to interact with Contentful, **do not move this file if you need to use a generator**.
+
 #### Model Generator
 
 Sprout-static-cms comes equipped with a Contentful Content Model generator. Pass in the Content Model's name followed by a list of fields to generate following a `name:type` format, for example:
