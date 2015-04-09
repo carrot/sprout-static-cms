@@ -1,31 +1,25 @@
 exports.configure = [
   {
-    type: 'input',
     name: 'name',
     message: 'What is the name of your project?'
   },
   {
-    type: 'input',
     name: 'description',
     message: 'Describe your project'
   },
   {
-    type: 'input',
     name: 'delivery_token',
     message: 'What is your Contentful Delivery API token?'
   },
   {
-    type: 'input',
     name: 'management_token',
     message: 'What is your Contentful Managment API token?'
   },
   {
-    type: 'input',
     name: 'space_id',
     message: 'What is your Contentful Space ID?'
   },
   {
-    type: 'input',
     name: 'netlify_token',
     message: 'What is your Netlify access token?'
   }
