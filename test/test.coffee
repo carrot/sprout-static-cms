@@ -22,7 +22,6 @@ after ->
   sprout.remove(tpl).then -> rimraf.sync(test_path)
 
 describe 'sprout-static-cms', ->
-
   it 'should load the correct values into contentful.coffee', (done) ->
     nodefn.call(fs.readFile, path.join(test_path, 'contentful.coffee'), 'utf8')
       .then (res) ->
