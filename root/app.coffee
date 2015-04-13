@@ -5,7 +5,10 @@ contentful   = require 'roots-contentful'
 config       = require './contentful'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'contentful.coffee']
+  ignores: [
+    'readme.md', '**/layout.*', '**/_*', '.gitignore', 'contentful.coffee',
+    'Makefile', 'ship*'
+  ]
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]
