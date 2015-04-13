@@ -2,14 +2,14 @@
   "name": "<%= S.slugify(name) %>",
   "description": "<%= description %>",
   "dependencies": {
-    "jade": "1.x",
+    "jade": "1.9.x",
     "marked": "0.3.x",
-    "stylus": "0.48.x",
-    "coffee-script": "1.8.x",
-    "autoprefixer-stylus": "0.3.x",
+    "stylus": "0.50.x",
+    "coffee-script": "1.9.x",
+    "autoprefixer-stylus": "0.5.x",
     "axis": "0.3.x",
-    "rupture": "0.4.x",
-    "roots": "3.0.0-rc.10",
+    "rupture": "0.6.x",
+    "roots": "3.0.x",
     "roots-contentful": "0.0.3",
     "ship": "0.2.x"
   }
