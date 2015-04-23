@@ -28,7 +28,7 @@ parse_fields = (fields) ->
     name  = split[0]
     type  = s.capitalize(split[1]) || 'Text'
     validate_field_type(type)
-    field_type = {name: name, type: type}
+    field_type = {name: name, type: type, id: s.underscored(name)}
     if type == 'Asset'
       field_type.linkType = type
       field_type.type     = 'Link'
