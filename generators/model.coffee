@@ -15,6 +15,7 @@ valid_field_types = [
   "Link"
   "Array"
   "Object"
+  "Asset"
 ]
 
 validate_field_type = (type) ->
@@ -27,7 +28,11 @@ parse_fields = (fields) ->
     name  = split[0]
     type  = s.capitalize(split[1]) || 'Text'
     validate_field_type(type)
-    res.push(name: name, type: type)
+    field_type = {name: name, type: type}
+    if type == 'Asset'
+      field_type.linkType = type
+      field_type.type     = 'Link'
+    res.push(field_type)
     return res
   , []
 
