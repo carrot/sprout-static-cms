@@ -10,7 +10,7 @@
     "axis": "0.3.x",
     "rupture": "0.6.x",
     "roots": "3.0.x",
-    "roots-contentful": "0.0.3",
+    "roots-contentful": "0.0.7",
     "ship": "0.2.x"
   }
 }
