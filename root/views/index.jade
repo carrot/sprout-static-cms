@@ -13,4 +13,4 @@ block content
     //- - for post in contentful.posts
       //- li
         //- h4= post.title
-        //- p= post.body
+        //- != marked(post.body)

@@ -8,6 +8,7 @@
     "coffee-script": "1.9.x",
     "autoprefixer-stylus": "0.5.x",
     "axis": "0.3.x",
+    "marked": "0.3.x",
     "rupture": "0.6.x",
     "roots": "3.0.x",
     "roots-contentful": "0.0.7",
