@@ -1,7 +1,5 @@
 {
   "name": "static-cms",
   "description": "A static CMS.",
-  "contentful_token": "test_contentful_token",
-  "space_id": "test_space_id",
   "netlify_token": "test_netlify_token"
 }

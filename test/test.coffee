@@ -8,12 +8,8 @@ test_path          = path.join(__dirname, 'tmp')
 
 tpl = 'sprout-static-cms'
 
-locals_path = path.join(_path, 'locals.json')
-locals      = require(locals_path)
-
 opts =
-  config: locals_path
-  branch: 'tests'
+  locals: locals
   verbose: true
 
 before (done) ->
@@ -26,11 +22,11 @@ after ->
   sprout.remove(tpl).then -> rimraf.sync(test_path)
 
 describe 'sprout-static-cms', ->
-
-  it 'should load the correct values into app.coffee', (done) ->
-    nodefn.call(fs.readFile, path.join(test_path, 'app.coffee'), 'utf8')
+  it 'should load the correct values into contentful.coffee', (done) ->
+    nodefn.call(fs.readFile, path.join(test_path, 'contentful.coffee'), 'utf8')
       .then (res) ->
-        expect(res).to.have.string "access_token: '#{locals.contentful_token}'"
+        expect(res).to.have.string "access_token: '#{locals.delivery_token}'"
+        expect(res).to.have.string "management_token: '#{locals.management_token}'"
         expect(res).to.have.string "space_id: '#{locals.space_id}'"
       .then(-> done()).catch(done)
 

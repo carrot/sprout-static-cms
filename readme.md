@@ -35,10 +35,38 @@ You will need the following set up before you run this:
 3. Under Personal Access Tokens, create a new token.
 4. Note your Netlify API token, you'll need this for the template.
 
+### Generators
+
+Once your static CMS project is set up, this template will also give you useful generators. These generators rely on `contentful.coffee` in order to provide the credentials needed to interact with Contentful, **do not move this file if you need to use a generator**.
+
+#### Model Generator
+
+Sprout-static-cms comes equipped with a Contentful Content Model generator. Pass in the Content Model's name followed by a list of fields to generate following a `name:type` format, for example:
+
+```bash
+sprout run static-cms model Post title:text description:text slug:symbol date:date rank:integer price:number private:boolean
+``` 
+
+If you don't specify a field type, sprout will default to a text field.
+
+
+#### Tests
+
+In order to run the tests, you'll need to add a couple environment variables. This project is setup to use [dotenv](https://github.com/motdotla/dotenv), so all you should need to do is add a `.env` file with the following variables:
+
+```
+DELIVERY_TOKEN=XXXXXXXXXXXX
+MANAGEMENT_TOKEN=XXXXXXXXXXXX
+SPACE_ID=XXXXXXXXXXXX
+```
+
+You should use a test Contentful account (i.e. not in use in production) to populate these values.
+
 ### Options
 
 - **name** (name of template)
 - **description** (a short description of the template)
-- **contentful_token** (your Contentful account's Delivery API access token)
 - **space_id** (the ID for the Contentful space associated with this project)
+- **delivery_token** (your Contentful space's Delivery API token)
+- **management_token** (your Contentful account's Management API token)
 - **netlify_token** (your Netlify account's personal access token)
