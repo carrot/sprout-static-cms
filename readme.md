@@ -4,7 +4,7 @@ A [sprout](http://github.com/carrot/sprout) template for creating a static CMS i
 
 ### Installation
 
-- `npm install sprout -g`
+- `npm install sprout-cli -g`
 - `sprout add static-cms https://github.com/carrot/sprout-static-cms.git`
 
 ### Setup
@@ -34,6 +34,10 @@ You will need the following set up before you run this:
 2. Log in and click on your account dropdown at the top right and select `OAuth apps`
 3. Under Personal Access Tokens, create a new token.
 4. Note your Netlify API token, you'll need this for the template.
+
+#### Create a project
+
+`sprout init static-cms my-static-site`
 
 ### Generators
 
